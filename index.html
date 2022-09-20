@@ -4,13 +4,37 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
+
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+
+
+    <title>Benton's Better Bing</title>
 
 </head>
 
 <body>
+  <header onclick="changeBackground()">Benton's Better Bing</header>
+
 
   <script type="text/javascript" src="./script.js"></script>
+
+
+  <input type="text" id="query" />
+  <button value="search" onclick="searchFunction()">Search</button>
+  <button id="timeButton" onclick="tellTime()">Time</button>
+
+    <div id="searchResults">
+
+    </div>
+    <div id="time">
+
+    </div>
 
 </body>
 
